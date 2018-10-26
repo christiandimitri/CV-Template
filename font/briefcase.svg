@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="briefcase" horiz-adv-x="1000" >
+<font-face font-family="briefcase" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="suitcase" unicode="&#xe800;" d="M900 650q42 0 71-30t29-70l0-550q0-42-29-71t-71-29l-50 0 0 750 50 0z m-900-100q0 40 30 70t70 30l50 0 0-750-50 0q-40 0-70 29t-30 71l0 550z m670 204l0-104 110 0 0-750-560 0 0 750 110 0 0 104q98 46 170 46t170-46z m-60-104l0 66q-52 24-110 24-54 0-110-24l0-66 220 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
