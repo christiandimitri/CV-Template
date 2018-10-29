@@ -1,283 +1,319 @@
-body{
+body {
     background-color: gainsboro;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    margin: 0;
     margin-top: 1.5em;
     font-family: 'Open Sans', sans-serif;
-    font-size:15px;
-    color:dimgray;
-    background: #8e9eab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to  top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-size: 15px;
+    color: dimgray;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1{
+h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
-.column{
+
+.column {
     flex-grow: 1;
-    
 }
 
-.right{
+.right {
     min-width: 45em;
     max-width: 50%;
 }
 
-.left{
+.left {
     min-width: 18em;
     max-width: 20%;
 }
 
-.paper{
+.paper {
     background-color: white;
-    margin-left:1em;
+    margin-left: 1em;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
-    padding:1em;
+    padding: 1em;
     box-shadow: 0 8px 6px -6px grey;
-
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.title{
+.title {
     height: 100px;
 }
 
-.job{
+.job {
     flex-grow: 1;
     padding: 1em;
 }
 
-.job:not(:last-child){
-        border-bottom: 1px solid gainsboro;
-
-}
-
-.side-bar-content {
-
-}
-.border{
+.job:not(:last-child) {
     border-bottom: 1px solid gainsboro;
 }
 
-.meter { 
-    height: 20px;  /* Can be anything */
+.border {
+    padding-bottom: 1em;
+    border-bottom: 1px solid gainsboro;
+}
+
+.meter {
+    height: 20px;
+    /* Can be anything */
     position: relative;
     background: gainsboro;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-
 }
-.meter > span {
+
+.meter>span {
     display: block;
     height: 100%;
-       -webkit-border-top-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
     -webkit-border-bottom-right-radius: 20px;
-           -moz-border-radius-topright: 20px;
-        -moz-border-radius-bottomright: 20px;
-               border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-        -webkit-border-top-left-radius: 20px;
-     -webkit-border-bottom-left-radius: 20px;
-            -moz-border-radius-topleft: 20px;
-         -moz-border-radius-bottomleft: 20px;
-                border-top-left-radius: 20px;
-             border-bottom-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: steelblue;
     position: relative;
     overflow: hidden;
+    
 }
 
-.meter >span::after{
-    content:attr(data);
+.meter>span::after {
+    content: attr(data);
     font-size: 80%;
     color: white;
     font-weight: bold;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
 }
-#author-img{
+
+#author-img {
     height: 100px;
     width: 100px;
-    display:block;
+    display: block;
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     background-image: url("Untitled-1.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 5%;
 }
 
-.icon{
+#author-skill{
+    margin-block-end:0.2em;
+    margin-block-start: 0.7em;
+}
+
+.icon {
     position: relative;
 }
 
-.icon::before{ 
-    content: "\f095";  /* this is your text. You can also use UTF-8 character codes as I do here */
+.above {
+    place-self: center stretch;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.above::before {
+    position: absolute;
+    top: -1em !important;
+    left: 50% !important;
+    transform: translateX(-50%)
+}
+
+.icon::before {
+    content: "\f095";
+    /* this is your text. You can also use UTF-8 character codes as I do here */
     font-family: "Font Awesome\ 5 Free";
     font-weight: bold;
     left: 0em;
     top: 0;
     margin-right: 1em;
     font-size: 15px;
-    color:inherit;
-    color:steelblue;
-}
-
-
-#author-job::before{
-    content:"\f0b1";
-}
-
-#author-country::before{
-    content:"\f015";
-}
-
-#author-phone::before{
-    content:"\f095";
-}
-
-#author-email::before{
-    content:"\f0e0";
-}
-
-#skills::before{
-    content:"\f069"
-}
-
-#languages::before{
-    content:"\f57d";
-}
-
-#experience .icon::before{
-    content:"\f0b1";
-    font-size:100%;
-}
-
-#education .icon::before{
-    content:"\f19d";
-    font-size:100%;
-    margin-right:0.5em;
-    margin-left:0.2em;
-}
-
-#date{
+    color: inherit;
     color: steelblue;
-    
 }
 
-#date::before{
-    content:"\f273";
+#author-job::before {
+    content: "\f0b1";
+}
+
+#author-location::before {
+    content: "\f3c5";
+}
+
+#author-country::before {
+    content: "\f015";
+}
+
+#author-phone::before {
+    content: "\f095";
+}
+
+#author-email::before {
+    content: "\f0e0";
+}
+
+#skills::before {
+    content: "\f069"
+}
+
+#languages::before {
+    content: "\f57d";
+}
+
+#awards::before {
+    content: "\f559";
+}
+
+#author-award::before {
+    content: "\f559";
+    font-size: 200%;
+    color: gold;
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, rgb(53, 63, 95), steelblue);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgb(53, 63, 95), steelblue);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle-icon {
+    background-color: steelblue;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+    margin: 0.3em;
+    color: white;
+}
+
+#experience .icon::before {
+    content: "\f0f2";
+    font-size: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+#education .icon::before {
+    content: "\f19d";
+    font-size: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+#workshops .icon::before {
+    content: "\f552";
+    font-size: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+#publications .icon::before {
+    content: "\f5fd";
+    font-size: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+#date {
+    color: steelblue;
+}
+
+#date::before {
+    content: "\f273";
     font-weight: lighter;
 }
 
-#current{
+#current {
     background-color: steelblue;
-    
-    padding-right:0.2em;
+    padding-right: 0.2em;
     padding-left: 0.2em;
     border-radius: 5%;
     color: white;
-
 }
-
-@font-face {
-  font-family: 'briefcase';
-  src: url('font/briefcase.eot?37909830');
-  src: url('font/briefcase.eot?37909830#iefix') format('embedded-opentype'),
-       url('font/briefcase.woff2?37909830') format('woff2'),
-       url('font/briefcase.woff?37909830') format('woff'),
-       url('font/briefcase.ttf?37909830') format('truetype'),
-       url('font/briefcase.svg?37909830#briefcase') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-
-/* @media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'briefcase';
-    src: url('../font/briefcase.svg?37909830#briefcase') format('svg');
-  }
-} */
-
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "briefcase";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .5em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  color: steelblue;
-}
- 
-.icon-suitcase:before { content: '\e800'; } /* '' */
 
 /*==================================================
  * Effect 7
  * ===============================================*/
 
- .paper:before, .paper:after
- {
-     content:"";
-     position:absolute;
-     z-index:-1;
-     -webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);
-     -moz-box-shadow:0 0 20px rgba(0,0,0,0.5);
-     box-shadow:0 0 20px rgba(78, 75, 75, 0.5);
-     top:0;
-     bottom:0;
-     left:10px;
-     right:10px;
-     -moz-border-radius:100px / 10px;
-     border-radius:100px / 10px;
- }
- .paper:after
- {
-     right:10px;
-     left:auto;
-     -webkit-transform:skew(8deg) rotate(3deg);
-        -moz-transform:skew(8deg) rotate(3deg);
-         -ms-transform:skew(8deg) rotate(3deg);
-          -o-transform:skew(8deg) rotate(3deg);
-             transform:skew(8deg) rotate(3deg);
- }
- 
+.paper:before,
+.paper:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(78, 75, 75, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.paper:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    flex-direction: row;
+    margin-right: 1em;
+}
+
+footer{
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    color: white;
+    font-weight: 500;
+}
+
+footer p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}

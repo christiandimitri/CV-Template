@@ -1,0 +1,40 @@
+{
+  "name": "calendar",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "11dd26ebf6934bf750a9156b353d7f2d",
+      "css": "suitcase",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "266d5d9adf15a61800477a5acf9a4462",
+      "css": "chart-bar",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e835d9d0f2ee39ae01b01cc6a6fa24ab",
+      "css": "play-circled2",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7f3d8ff1d5f6ee019f0c00ed7a86caec",
+      "css": "truck",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ebabd8ff4b67bdbba7660952c30813ca",
+      "css": "skiing",
+      "code": 59446,
+      "src": "maki"
+    }
+  ]
+}
