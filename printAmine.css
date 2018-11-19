@@ -134,6 +134,15 @@ body {
 #author-skill{
     margin-block-end:0.2em;
     margin-block-start: 0.7em;
+    background-color: rgb(34, 86, 104);
+    width: fit-content;
+    padding: 0.3em;
+    border-radius: 5px;
+    font-size: 80%;
+}
+#author-skill{
+  margin-block-end:0.2em;
+  margin-block-start: 0.4em;
 }
 
 .icon {
