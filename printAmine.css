@@ -120,12 +120,12 @@ body {
     margin-bottom: 25px;
     margin-right: auto;
     margin-left: auto;
-  background-image: url("Christian.jpg");  
+  background-image: url("Amin.jpg");  
     background-size: cover;
     background-color: grey;
     background-position: top;
     background-blend-mode: luminosity;
-    border-radius: 5%;
+    border-radius: 50%;
     -webkit-box-shadow: 0 1px 6px rgba(66, 66, 66);
     -moz-box-shadow: 0 1px 6px rgba(66, 66, 66);
     box-shadow: 0 1px 6px rgba(66, 66, 66);
