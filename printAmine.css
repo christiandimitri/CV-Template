@@ -277,6 +277,14 @@ font-weight: 900;
     box-shadow: 0 2px 3px rgba(66, 66, 66);
 }
 
+#objective .icon::before {
+  content: "\f0eb";
+  font-size: 100%;
+  margin-right: 0.5em;
+  margin-left: 0.2em;
+  color: steelblue;
+}
+
 #experience .icon::before {
     content: "\f0f2";
     font-size: 100%;
