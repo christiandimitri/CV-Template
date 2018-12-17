@@ -14,7 +14,8 @@ body {
   }
 
   @media print {
-    page { padding: 0em;
+    page { 
+      padding: 0em;
     }
   }
 
@@ -66,7 +67,6 @@ body {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    
     -webkit-box-shadow: 0 2px 3px rgba(66, 66, 66);
     -moz-box-shadow: 0 2px 3px rgba(66, 66, 66);
     box-shadow: 0 2px 3px rgba(66, 66, 66);
@@ -120,7 +120,7 @@ body {
     margin-bottom: 25px;
     margin-right: auto;
     margin-left: auto;
-  background-image: url("Untitled-2.jpg");  
+    background-image: url("Myimage.jpg");  
     background-size: cover;
     background-color: grey;
     background-position: top;
@@ -209,15 +209,12 @@ body {
 #author-github::before{
   font-family: "Font Awesome 5 Brands"; content: "\f113";
   position: absolute;
-
   font-weight: lighter;
 }
 #author-linkdin::before{
   font-family: "Font Awesome 5 Brands"; content: "\f08c";
   position: absolute;
-
   font-weight: 50;
-
 }
 #author-webpage::before{
   font-family: "Font Awesome 5 Free"; content: "\f14e";
@@ -385,6 +382,7 @@ a{
 .break{
     page-break-after: always;
 }
+
 .side-bar-content{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
