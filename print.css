@@ -121,7 +121,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-image: url("Myimage.jpg");  
-    background-size: cover;
+    background-size: 120%;
     background-color: grey;
     background-position: top;
     background-blend-mode: luminosity;
@@ -332,9 +332,9 @@ font-weight: 900;
 
 .job {
     flex-grow: 1;
-    padding: 1em;
+    padding: 0.7em;
     padding-bottom: 0.5em;
-    padding-top: 1em;
+    padding-top: 0.7em;
 }
 
 .pages{
@@ -347,9 +347,9 @@ font-weight: 900;
     margin-block-start: 0.1em;
 }
 h2{
-  font-size: 1.5em;
-  margin-block-end: 0.4em;
-  margin-block-start: 0.5em;
+  font-size: 1.3em;
+  margin-block-end: 0.2em;
+  margin-block-start: 0.25em;
 }
 a{
   text-decoration: none;
