@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+  
   page[size="A4"] {  
     width: 21cm;
     height: 59.4cm;
