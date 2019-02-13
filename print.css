@@ -1,7 +1,7 @@
 body {
     background: rgb(204,204,204); 
     font-family: 'Open Sans', sans-serif;
-    font-size: 9.6pt;
+    font-size: 9.5pt;
     color: dimgray;
     margin: 0;
     display:flex;
@@ -121,9 +121,8 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-image: url("Myimage.jpg");  
-    background-size: 120%;
-    background-color: grey;
-    background-position: top;
+    background-size: 170%;
+    background-position: center;
     background-blend-mode: luminosity;
     border-radius: 5%;
     -webkit-box-shadow: 0 1px 6px rgba(66, 66, 66);
